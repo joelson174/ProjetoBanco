@@ -139,6 +139,22 @@ public class Cliente {
 			System.out.println("Conta poupanca inexistente para mostrar histórico!");
 		}
 	}
+	
+	public void calcularRendimentoPoupanca(){
+		if (contP != null){
+			this.getContP().efetuarRendimento();
+		} else {
+			System.out.println("Conta poupanca inexistente para efetuar rendimento!");
+		}
+	}
+	
+	public void calcularValorManutencao(){
+		if (contC != null){
+			this.getContC().efetuarManutencao();
+		} else {
+			System.out.println("Conta corrente inexistente para efetuar manutenção!");
+		}
+	}
 
 	public String getNome() {
 		return nome;

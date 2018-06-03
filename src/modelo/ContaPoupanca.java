@@ -21,6 +21,7 @@ public class ContaPoupanca extends Conta {
 
 	public void efetuarRendimento() {
 		this.setSaldo(getSaldo() + (getSaldo() * jurosRend));
+		System.out.println("Rendimento efetuado com sucesso! (" + jurosRend + " do total)");
 		this.adicionarHistorico(getSaldo(), "Rendimento", "DD/MM/AAAA");
 	}
 

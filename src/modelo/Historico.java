@@ -26,14 +26,14 @@ public class Historico {
 	public void mostrarDadosHistorico() {
 		if (this.getDestino() != null) {
 			System.out.println("============================");
-			System.out.println("Valor: " + this.getValor());
+			System.out.println("Valor: R$ " + this.getValor());
 			System.out.println("Tipo da conta: " + this.getTipo());
 			System.out.println("Data da atividade: " + this.getData());
 			System.out.println("Destino: " + this.getDestino());
 			System.out.println("============================");
 		} else {
 			System.out.println("============================");
-			System.out.println("Valor: " + this.getValor());
+			System.out.println("Valor: R$ " + this.getValor());
 			System.out.println("Tipo da conta: " + this.getTipo());
 			System.out.println("Data da atividade: " + this.getData());
 			System.out.println("============================");

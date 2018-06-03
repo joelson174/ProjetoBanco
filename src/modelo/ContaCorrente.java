@@ -21,8 +21,9 @@ public class ContaCorrente extends Conta {
 	}
 
 	public void efetuarManutencao() {
-		this.adicionarHistorico(valorManutencao, "Manutenção", "DD/MM/AAAA");
 		this.setSaldo(this.getSaldo() - this.valorManutencao);
+		System.out.println("Manutenção efetuada com sucesso (Valor: R$ " + valorManutencao + ")");
+		this.adicionarHistorico(valorManutencao, "Manutenção", "DD/MM/AAAA");
 	}
 
 	public void setValorManutencao(double valorManutencao) {
